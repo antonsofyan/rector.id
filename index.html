@@ -1,403 +1,170 @@
-<!DOCTYPE html>
-<html class="no-js" lang="">
+<!doctype html>
+<html lang="en" data-bs-theme="light">
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-    <title>Rector.id - Konsultan Teknologi Informasi yang telah berpengalaman lebih dari 15 tahun dalam merancang dan membangun solusi digital untuk institusi pendidikan</title>
-    <meta name="description" content="OpenPMB adalah produk open source perdana dari Rector.id, yang lahir dari pengalaman lebih dari 15 tahun dalam mengembangkan sistem informasi untuk perguruan tinggi. Dirancang khusus untuk kampus yang menghadapi keterbatasan anggaran maupun sumber daya IT."/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="icon" type="image/png" href="https://codeigniter.com/favicons/favicon.png">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="assets/css/lineicons.css"/>
-    <link rel="stylesheet" href="assets/css/animate.css"/>
-    <link rel="stylesheet" href="assets/css/main.css"/>
+    <meta name="description" content="Konsultan Teknologi Informasi yang telah berpengalaman lebih dari 15 tahun dalam merancang dan membangun solusi digital untuk institusi pendidikan"/>
+    <meta name="author" content="Anton Sofyan"/>
+    <title>Rector.id - Konsultan Teknologi Informasi yang telah berpengalaman lebih dari 15 tahun dalam merancang dan membangun solusi digital untuk institusi pendidikan</title>
+    <script src="./assets/js/color-modes.js"></script>
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet"/>
+    <style>
+        :root {
+            --bs-primary: #4F46E5;
+            --bs-primary-rgb: 79, 70, 229;
+
+            --bs-secondary: #6366F1;
+            --bs-secondary-rgb: 99, 102, 241;
+
+            --bs-dark: #1E1B4B;
+            --bs-dark-rgb: 30, 27, 75;
+
+            --bs-body-bg: #F3F4F6;
+            --bs-body-color: #111827;
+        }
+
+        .btn-primary {
+            background-color: #4F46E5;
+            border-color: #4F46E5;
+        }
+
+        .btn-primary:hover {
+            background-color: #4338CA;
+            border-color: #4338CA;
+        }
+
+        .text-bg-dark {
+            background-color: #1E1B4B !important;
+        }
+
+        .bg-body-tertiary {
+            background-color: #ffffff !important;
+            border: 1px solid #e5e7eb !important;
+        }
+
+        .border {
+            border-color: #d1d5db !important;
+        }
+
+    </style>
 </head>
 <body>
-<div class="preloader">
-    <div class="loader">
-        <div class="spinner">
-            <div class="spinner-container">
-                <div class="spinner-rotator">
-                    <div class="spinner-left">
-                        <div class="spinner-circle"></div>
-                    </div>
-                    <div class="spinner-right">
-                        <div class="spinner-circle"></div>
-                    </div>
-                </div>
+<main>
+    <div class="container py-4">
+        <div class="mb-4">
+            <div class="container-fluid py-3">
+                <h1 class="display-4 fw-bold" style="letter-spacing: 6px">Rector<span class="text-warning">.id</span>
+                </h1>
+                <p class="col-md-12 fs-5">
+                    Selamat datang di rector.id, sebuah inisiatif open source yang kami bangun untuk menghadirkan solusi
+                    teknologi yang modern, terjangkau, dan mudah diakses bagi institusi pendidikan tinggi. Rector.id
+                    lahir dari kebutuhan nyata akan sistem yang lebih efisien, terstruktur, dan fleksibel dalam
+                    mendukung proses akademik serta pengelolaan data perguruan tinggi di Indonesia.
+                </p>
+                <p class="col-md-12 fs-5">
+                    Melalui tiga produk utama — Sistem Informasi Akademik, Sistem Penerimaan Mahasiswa Baru, dan Feeder
+                    Helper — kami berkomitmen untuk menyediakan platform yang dapat digunakan, dikembangkan, dan
+                    disesuaikan oleh siapa pun. Dengan semangat kolaborasi dan keterbukaan, rector.id dirancang agar
+                    komunitas, pengembang, serta perguruan tinggi dapat berkontribusi dan saling berbagi dalam membangun
+                    ekosistem teknologi pendidikan yang lebih baik.
+                </p>
+                <p class="col-md-12 fs-5">
+                    Harapan kami, rector.id dapat menjadi langkah kecil namun berarti dalam mendorong transformasi
+                    digital di dunia pendidikan tinggi, menghadirkan solusi yang lebih mudah, hemat biaya, serta
+                    berorientasi pada kebutuhan pengguna.
+                </p>
+                <p class="col-md-12 fs-5">
+                    Selamat menggunakan, menjelajah, dan berkontribusi dalam pengembangan rector.id.
+                </p>
             </div>
         </div>
-    </div>
-</div>
-<header class="header">
-    <div class="navbar-area">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-12">
-                    <nav class="navbar navbar-expand-lg">
-                        <a class="fs-4 fw-bolder" href="#">
-                            <span class="text-white">Rector</span><span style="color: yellow;">.id</span>
-                        </a>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-<section id="home" class="hero-section">
-    <div class="container">
-        <div class="row align-items-center position-relative">
-            <div class="col-lg-6">
-                <div class="hero-content">
-                    <h1 class="wow fadeInUp" data-wow-delay=".4s">
-                        "OpenPMB" by<br><span class="text-white">Rector</span><span style="color: yellow;">.id</span>
-                    </h1>
-                    <p class="wow fadeInUp" data-wow-delay=".6s">
-                        Dengan <b>OpenPMB</b>, kampus Anda bisa menjalankan proses Penerimaan Mahasiswa Baru secara digital, terstruktur, dan sesuai regulasi. Mulai dari pendaftaran hingga pelaporan, semua ada dalam satu platform yang gratis digunakan.
+        <div class="row align-items-md-stretch mb-4">
+            <div class="col-md-6">
+                <div class="h-100 p-5 text-bg-dark rounded-3 fs-5">
+                    <h2 class="fw-bolder">Feeder Helper</h2>
+                    <p>
+                        Aplikasi ini dikembangkan untuk mempermudah proses impor data, sinkronisasi, dan pelaporan
+                        perguruan tinggi ke Kementerian Pendidikan Tinggi, Sains, dan Teknologi sesuai dengan standar
+                        dan format resmi yang ditetapkan. Dengan menggunakan aplikasi ini, perguruan tinggi dapat
+                        mengelola data akademik secara lebih cepat, terstruktur, dan minim kesalahan, serta
+                        mengakomodasi seluruh kebutuhan pelaporan wajib setiap semester sesuai ketentuan standar
+                        PDDikti.
                     </p>
-                    <button onclick="return alert('Coming soon!');" class="main-btn border-btn btn-hover wow fadeInUp" data-wow-delay=".6s">Download Beta Version</button>
+                    <a href="https://drive.google.com/file/d/1PdSoXYsHJvZ7He44vu0VOTE1H64C7zmq/view?usp=sharing" target="_blank" class="btn btn-primary position-relative fw-bold px-4">
+                        DOWNLOAD V.1.0.0
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">Free</span>
+                    </a>
                 </div>
             </div>
-            <div class="col-lg-6">
-                <div class="hero-img wow fadeInUp" data-wow-delay=".5s">
-                    <img src="assets/img/preview.png" alt="" width="833px"/>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section id="about" class="about-section pt-150">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-xl-6 col-lg-6">
-                <div class="about-content">
-                    <div class="section-title mb-30">
-                        <h2 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
-                            Tentang Kami
-                        </h2>
-                        <p class="wow fadeInUp mb-3" data-wow-delay=".4s">
-                            <b>OpenPMB</b> adalah produk open source perdana dari <b>Rector.id</b>, yang lahir dari pengalaman lebih dari 15 tahun dalam mengembangkan sistem informasi untuk perguruan tinggi. Dirancang khusus untuk kampus yang menghadapi keterbatasan anggaran maupun sumber daya IT.
-                        </p>
-                        <p class="wow fadeInUp mb-3" data-wow-delay=".4s">
-                            <b>OpenPMB</b> menghadirkan solusi penerimaan mahasiswa baru secara <b>online, efisien, dan mudah diakses</b>. <b>OpenPMB</b> membantu perguruan tinggi menyederhanakan proses penerimaan mahasiswa baru dengan fitur-fitur <b>canggih, tampilan modern, dan kepatuhan terhadap standar PDDIKTI — tanpa biaya</b>
-                        </p>
-                        <p class="wow fadeInUp mb-3" data-wow-delay=".4s">
-                            Cukup dengan menyediakan server dan domain, kampus Anda sudah dapat mengelola seluruh proses PMB secara digital—tanpa perlu biaya lisensi dan tanpa ketergantungan pada tim IT eksternal (vendor) dengan biaya tahunan yang mahal. <b>OpenPMB</b> menjadi pilihan tepat bagi perguruan tinggi yang ingin bertransformasi digital secara <b>cepat, hemat, dan mandiri</b>.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-6 col-lg-6 order-first order-lg-last">
-                <div class="about-img-2">
-                    <img src="assets/img/preview-2.png" alt="" class="w-100"/>
-                    <img
-                            src="assets/img/about/about-right-shape.svg"
-                            alt=""
-                            class="shape shape-1"
-                    />
-                    <img
-                            src="assets/img/about/right-dots.svg"
-                            alt=""
-                            class="shape shape-2"
-                    />
+            <div class="col-md-6">
+                <div class="h-100 p-5 bg-body-tertiary border rounded-3 fs-5">
+                    <h2 class="fw-bolder">SIAKAD</h2>
+                    <p>
+                        Sistem Informasi Akademik (SIAKAD) adalah sebuah platform yang digunakan oleh perguruan tinggi
+                        untuk mengelola seluruh proses akademik secara terintegrasi dan digital. Sistem ini mencakup
+                        berbagai layanan, seperti pengelolaan data mahasiswa, kurikulum, mata kuliah, dosen, jadwal
+                        perkuliahan, KRS/KHS, penilaian, hingga pelaporan akademik. Dengan SIAKAD, institusi dapat
+                        meningkatkan efisiensi administrasi, meminimalkan kesalahan pencatatan, serta memberikan
+                        kemudahan akses informasi bagi mahasiswa, dosen, dan bagian akademik secara cepat dan akurat.
+                    </p>
+                    <button type="button" class="btn btn-primary position-relative fw-bold px-4 disabled">
+                        DOWNLOAD
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+    Coming Soon
+  </span>
+                    </button>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<section id="why" class="feature-extended-section pt-100">
-    <div class="feature-extended-wrapper">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xxl-6 col-xl-6 col-lg-8 col-md-9">
-                    <div class="section-title text-center mb-60">
-                        <h2 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
-                            Kenapa Harus Segera Beralih Menggunakan <b>OpenPMB</b> dari Rector.id?
-                        </h2>
-                    </div>
+
+        <div class="row align-items-md-stretch">
+            <div class="col-md-6">
+                <div class="h-100 p-5 bg-body-tertiary border rounded-3 fs-5">
+                    <h2 class="fw-bolder">PMB Online</h2>
+                    <p>
+                        Sistem Penerimaan Mahasiswa Baru (PMB) adalah platform digital yang digunakan perguruan tinggi
+                        untuk mengelola seluruh proses pendaftaran calon mahasiswa secara online. Sistem ini mencakup
+                        fitur seperti pembuatan akun pendaftar, pengisian formulir, unggah dokumen, seleksi
+                        administrasi, pembayaran biaya pendaftaran, penjadwalan ujian/tes, hingga pengumuman hasil
+                        seleksi. Dengan adanya sistem PMB, proses penerimaan menjadi lebih efisien, transparan, dan
+                        mudah dijangkau oleh calon mahasiswa dari mana saja tanpa perlu datang langsung ke kampus.
+                    </p>
+                    <button type="button" class="btn btn-primary position-relative fw-bold px-4 disabled">
+                        DOWNLOAD
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+    Coming Soon
+  </span>
+                    </button>
                 </div>
             </div>
+            <div class="col-md-6">
+                <div class="h-100 p-5 text-bg-dark rounded-3 fs-5">
+                    <h2>Hubungi Kami</h2>
+                    <p>Lebih dari 15 tahun pengalaman dalam membangun solusi sistem yang mendukung operasional dan
+                        transformasi digital perguruan tinggi.</p>
+                    <ul>
+                        <li>Anton Sofyan</li>
+                        <li>Email:
+                            <ul>
+                                <li>4ntonsofyan@gmail.com</li>
+                                <li>antonsofyan@president.ac.id</li>
+                            </ul>
+                        </li>
+                        <li>WhatsApp: 0857-5988-8922</li>
+                        <li><a href="https://t.me/+nOK1naYX0TE5NTFl" class="text-warning fw-bold text-decoration-none">Join
+                            Group Telegram</a></li>
+                    </ul>
 
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-feature-extended">
-                        <div class="icon">
-                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(0 0 0)">
-<path d="M16.04 21.9877C15.94 21.9877 15.85 21.9677 15.76 21.9277L11.98 20.3777L8.2 21.9277C7.97 22.0177 7.71 21.9977 7.5 21.8577C7.29 21.7177 7.17 21.4877 7.17 21.2377V19.0577C7.17 18.8277 7.28 18.6077 7.46 18.4677L9.39 16.9677L9.27 14.5077L4.11 15.3277C3.9 15.3677 3.67 15.2977 3.51 15.1577C3.35 15.0177 3.25 14.8077 3.25 14.5877V12.0577C3.25 11.7677 3.42 11.5077 3.68 11.3777L9 8.8577C8.9 6.6077 9.57 4.3577 10.9 2.5377C11.41 1.8377 12.59 1.8377 13.1 2.5377C14.43 4.3577 15.11 6.5977 15 8.8577L20.32 11.3777C20.58 11.4977 20.75 11.7677 20.75 12.0577V14.5877C20.75 14.8077 20.65 15.0177 20.49 15.1577C20.32 15.2977 20.1 15.3677 19.89 15.3277L14.73 14.5077L14.61 16.9677L16.54 18.4677C16.72 18.6077 16.83 18.8277 16.83 19.0577V21.2377C16.83 21.4877 16.71 21.7177 16.5 21.8577C16.37 21.9377 16.23 21.9877 16.08 21.9877H16.04ZM8.67 19.4277V20.1177L11.7 18.8777C11.88 18.7977 12.09 18.7977 12.27 18.8777L15.3 20.1177V19.4177L13.35 17.8977C13.16 17.7477 13.05 17.5077 13.06 17.2677L13.24 13.5877C13.25 13.3777 13.35 13.1777 13.52 13.0477C13.69 12.9177 13.9 12.8577 14.11 12.8877L19.23 13.6977V12.5177L13.89 9.9877C13.62 9.8577 13.45 9.57769 13.46 9.26769L13.48 8.7977C13.57 6.9377 13.04 5.0877 11.98 3.5677C10.92 5.0877 10.39 6.9477 10.48 8.7977L10.5 9.26769C10.52 9.5677 10.35 9.8577 10.07 9.9877L4.73 12.5177V13.6977L9.85 12.8877C10.06 12.8577 10.27 12.9077 10.44 13.0477C10.61 13.1777 10.71 13.3777 10.72 13.5877L10.9 17.2677C10.91 17.5077 10.8 17.7477 10.61 17.8977L8.67 19.4177V19.4277Z" fill="#343C54"/>
-</svg>
-
-                        </div>
-                        <div class="content">
-                            <h3>Pendaftaran Lebih Mudah dan Cepat</h3>
-                            <p>
-                                Bisa daftar dari mana saja tanpa harus datang langsung ke kampus.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-feature-extended">
-                        <div class="icon">
-                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(0 0 0)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M5.28636 3.71264C4.853 4.09212 4.5 4.60958 4.5 5.25V18.75C4.5 19.3904 4.853 19.9079 5.28636 20.2874C5.7212 20.6681 6.30718 20.9769 6.96654 21.2211C8.29107 21.7116 10.0708 22 12 22C13.9292 22 15.7089 21.7116 17.0335 21.2211C17.6928 20.9769 18.2788 20.6681 18.7136 20.2874C19.147 19.9079 19.5 19.3904 19.5 18.75V5.25C19.5 4.60958 19.147 4.09212 18.7136 3.71264C18.2788 3.33187 17.6928 3.02313 17.0335 2.77892C15.7089 2.28836 13.9292 2 12 2C10.0708 2 8.29107 2.28836 6.96654 2.77892C6.30718 3.02313 5.7212 3.33187 5.28636 3.71264ZM6.27454 4.84114C6.02476 5.05985 6 5.20007 6 5.25C6 5.29993 6.02476 5.44015 6.27454 5.65886C6.52284 5.87629 6.92537 6.10625 7.48751 6.31446C8.60601 6.72871 10.2013 7 12 7C13.7987 7 15.394 6.72871 16.5125 6.31446C17.0746 6.10625 17.4772 5.87629 17.7255 5.65886C17.9752 5.44015 18 5.29993 18 5.25C18 5.20007 17.9752 5.05985 17.7255 4.84114C17.4772 4.62371 17.0746 4.39375 16.5125 4.18554C15.394 3.77129 13.7987 3.5 12 3.5C10.2013 3.5 8.60601 3.77129 7.48751 4.18554C6.92537 4.39375 6.52284 4.62371 6.27454 4.84114ZM18 9.75V7.28202C17.7055 7.44688 17.3796 7.59287 17.0335 7.72108C15.7089 8.21164 13.9292 8.5 12 8.5C10.0708 8.5 8.29107 8.21164 6.96654 7.72108C6.62039 7.59287 6.29445 7.44688 6 7.28202V9.75C6 9.79993 6.02476 9.94015 6.27454 10.1589C6.52284 10.3763 6.92537 10.6063 7.48751 10.8145C8.60601 11.2287 10.2013 11.5 12 11.5C13.7987 11.5 15.394 11.2287 16.5125 10.8145C17.0746 10.6063 17.4772 10.3763 17.7255 10.1589C17.9752 9.94015 18 9.79993 18 9.75ZM6 11.782C6.29445 11.9469 6.62039 12.0929 6.96654 12.2211C8.29107 12.7116 10.0708 13 12 13C13.9292 13 15.7089 12.7116 17.0335 12.2211C17.3796 12.0929 17.7055 11.9469 18 11.782V14.25C18 14.2999 17.9752 14.4402 17.7255 14.6589C17.4772 14.8763 17.0746 15.1063 16.5125 15.3145C15.394 15.7287 13.7987 16 12 16C10.2013 16 8.60601 15.7287 7.48751 15.3145C6.92537 15.1063 6.52284 14.8763 6.27454 14.6589C6.02476 14.4402 6 14.2999 6 14.25V11.782ZM6 18.75V16.282C6.29445 16.4469 6.62039 16.5929 6.96654 16.7211C8.29107 17.2116 10.0708 17.5 12 17.5C13.9292 17.5 15.7089 17.2116 17.0335 16.7211C17.3796 16.5929 17.7055 16.4469 18 16.282V18.75C18 18.7999 17.9752 18.9401 17.7255 19.1589C17.4772 19.3763 17.0746 19.6063 16.5125 19.8145C15.394 20.2287 13.7987 20.5 12 20.5C10.2013 20.5 8.60601 20.2287 7.48751 19.8145C6.92537 19.6063 6.52284 19.3763 6.27454 19.1589C6.02476 18.9401 6 18.7999 6 18.75Z" fill="#343C54"/>
-</svg>
-
-                        </div>
-                        <div class="content">
-                            <h3>Informasi Terpusat dan Jelas</h3>
-                            <p>
-                                Semua informasi penting (program studi, jadwal seleksi, syarat, biaya, dll.) bisa diakses di satu tempat.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-feature-extended">
-                        <div class="icon">
-                            <svg width="80" height="80" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(0 0 0)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M11.25 2.75C6.14154 2.75 2 6.89029 2 11.998C2 17.1056 6.14154 21.2459 11.25 21.2459C13.5335 21.2459 15.6238 20.4187 17.2373 19.0475L20.7182 22.5287C21.011 22.8216 21.4859 22.8217 21.7788 22.5288C22.0717 22.2359 22.0718 21.761 21.7789 21.4681L18.2983 17.9872C19.6714 16.3736 20.5 14.2826 20.5 11.998C20.5 6.89029 16.3585 2.75 11.25 2.75ZM3.5 11.998C3.5 7.71905 6.96962 4.25 11.25 4.25C15.5304 4.25 19 7.71905 19 11.998C19 16.2769 15.5304 19.7459 11.25 19.7459C6.96962 19.7459 3.5 16.2769 3.5 11.998Z" fill="#343C54"/>
-</svg>
-
-                        </div>
-                        <div class="content">
-                            <h3>Pantauan Proses Seleksi Secara Real-Time</h3>
-                            <p>
-                                Calon mahasiswa bisa memantau status pendaftaran, hasil seleksi, dan jadwal tes dengan mudah.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-feature-extended">
-                        <div class="icon">
-                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(0 0 0)">
-<path d="M6.38688 7.48329C6.45702 4.44302 8.94354 2 12.0007 2C15.0578 2 17.5444 4.44308 17.6144 7.48338C19.1767 7.60666 20.527 8.48325 21.3022 9.74999H19.3543C18.7838 9.26268 18.0434 8.96844 17.2343 8.96844H16.866C16.4518 8.96844 16.116 8.63266 16.116 8.21844V7.6153C16.116 5.34248 14.2735 3.5 12.0007 3.5C9.72784 3.5 7.88536 5.34248 7.88536 7.6153V8.21844C7.88536 8.63266 7.54957 8.96844 7.13536 8.96844H6.76578C4.96214 8.96844 3.5 10.4306 3.5 12.2342C3.5 14.0379 4.96214 15.5 6.76577 15.5H9.75V17H6.76577C4.13371 17 2 14.8663 2 12.2342C2 9.72969 3.93195 7.67638 6.38688 7.48329Z" fill="#343C54"/>
-<path d="M20.6554 12C20.6554 12.4142 20.3196 12.75 19.9054 12.75L13.3445 12.75C12.9303 12.75 12.5945 12.4142 12.5945 12C12.5945 11.5858 12.9303 11.25 13.3445 11.25H19.9054C20.3196 11.25 20.6554 11.5858 20.6554 12Z" fill="#343C54"/>
-<path d="M16.0976 14.4664C16.3904 14.1738 16.865 14.1738 17.1578 14.4665L19.3759 16.6831C19.6688 16.9759 19.669 17.4508 19.3762 17.7438C19.0834 18.0368 18.6085 18.0369 18.3155 17.7441L17.3776 16.8068L17.3776 21.251C17.3776 21.6652 17.0418 22.001 16.6276 22.001C16.2134 22.001 15.8776 21.6652 15.8776 21.251L15.8776 16.8067L14.9396 17.7441C14.6466 18.0369 14.1717 18.0368 13.8789 17.7438C13.5861 17.4508 13.5863 16.9759 13.8793 16.6831L16.0976 14.4664Z" fill="#343C54"/>
-</svg>
-
-                        </div>
-                        <div class="content">
-                            <h3>Upload Dokumen Online</h3>
-                            <p>
-                                Tidak perlu repot membawa dokumen fisik, cukup unggah secara digital.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-feature-extended">
-                        <div class="icon">
-                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(0 0 0)">
-<path d="M20.75 18.5V8.67794L19.25 10.1779V18.5C19.25 18.9142 18.9142 19.25 18.5 19.25H5.5C5.08579 19.25 4.75 18.9142 4.75 18.5V5.5C4.75 5.08579 5.08579 4.75 5.5 4.75H18.314L19.2936 3.77034C19.3842 3.67974 19.4806 3.59848 19.5816 3.52657C19.2607 3.35027 18.8921 3.25 18.5 3.25H5.5C4.25736 3.25 3.25 4.25736 3.25 5.5V18.5C3.25 19.7426 4.25736 20.75 5.5 20.75H18.5C19.7426 20.75 20.75 19.7426 20.75 18.5Z" fill="#343C54"/>
-<path d="M20.4838 6.51868C20.7767 6.22578 20.7767 5.75091 20.4838 5.45802C20.1909 5.16512 19.7161 5.16512 19.4232 5.45802L11.9298 12.9514L8.57686 9.59849C8.28396 9.3056 7.80909 9.3056 7.5162 9.5985C7.22331 9.89139 7.22331 10.3663 7.5162 10.6592L11.3995 14.5424C11.6924 14.8353 12.1672 14.8353 12.4601 14.5424L20.4838 6.51868Z" fill="#343C54"/>
-</svg>
-
-                        </div>
-                        <div class="content">
-                            <h3>Efisiensi Administrasi Penerimaan</h3>
-                            <p>
-                                Mengurangi pekerjaan manual dan mempercepat proses verifikasi data.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-feature-extended">
-                        <div class="icon">
-                            <svg width="80" height="80" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(0 0 0)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M5.60352 3.25C4.36088 3.25 3.35352 4.25736 3.35352 5.5V8.99998C3.35352 10.2426 4.36087 11.25 5.60352 11.25H9.10352C10.3462 11.25 11.3535 10.2426 11.3535 8.99998V5.5C11.3535 4.25736 10.3462 3.25 9.10352 3.25H5.60352ZM4.85352 5.5C4.85352 5.08579 5.1893 4.75 5.60352 4.75H9.10352C9.51773 4.75 9.85352 5.08579 9.85352 5.5V8.99998C9.85352 9.41419 9.51773 9.74998 9.10352 9.74998H5.60352C5.1893 9.74998 4.85352 9.41419 4.85352 8.99998V5.5Z" fill="#343C54"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M5.60352 12.75C4.36088 12.75 3.35352 13.7574 3.35352 15V18.5C3.35352 19.7426 4.36087 20.75 5.60352 20.75H9.10352C10.3462 20.75 11.3535 19.7426 11.3535 18.5V15C11.3535 13.7574 10.3462 12.75 9.10352 12.75H5.60352ZM4.85352 15C4.85352 14.5858 5.1893 14.25 5.60352 14.25H9.10352C9.51773 14.25 9.85352 14.5858 9.85352 15V18.5C9.85352 18.9142 9.51773 19.25 9.10352 19.25H5.60352C5.1893 19.25 4.85352 18.9142 4.85352 18.5V15Z" fill="#343C54"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M12.8535 5.5C12.8535 4.25736 13.8609 3.25 15.1035 3.25H18.6035C19.8462 3.25 20.8535 4.25736 20.8535 5.5V8.99998C20.8535 10.2426 19.8462 11.25 18.6035 11.25H15.1035C13.8609 11.25 12.8535 10.2426 12.8535 8.99998V5.5ZM15.1035 4.75C14.6893 4.75 14.3535 5.08579 14.3535 5.5V8.99998C14.3535 9.41419 14.6893 9.74998 15.1035 9.74998H18.6035C19.0177 9.74998 19.3535 9.41419 19.3535 8.99998V5.5C19.3535 5.08579 19.0177 4.75 18.6035 4.75H15.1035Z" fill="#343C54"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M15.1035 12.75C13.8609 12.75 12.8535 13.7574 12.8535 15V18.5C12.8535 19.7426 13.8609 20.75 15.1035 20.75H18.6035C19.8462 20.75 20.8535 19.7426 20.8535 18.5V15C20.8535 13.7574 19.8462 12.75 18.6035 12.75H15.1035ZM14.3535 15C14.3535 14.5858 14.6893 14.25 15.1035 14.25H18.6035C19.0177 14.25 19.3535 14.5858 19.3535 15V18.5C19.3535 18.9142 19.0177 19.25 18.6035 19.25H15.1035C14.6893 19.25 14.3535 18.9142 14.3535 18.5V15Z" fill="#343C54"/>
-</svg>
-
-
-                        </div>
-                        <div class="content">
-                            <h3>Data Terintegrasi dan Rapi</h3>
-                            <p>
-                                Semua data pendaftar tersimpan rapi, mudah diakses, dan siap diolah untuk keperluan rekap atau analisis.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-feature-extended">
-                        <div class="icon">
-                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(0 0 0)">
-<path opacity="0.4" d="M11.25 2C10.0074 2 9 3.00736 9 4.25V6.1285C9.12064 6.20925 9.2352 6.30292 9.34172 6.40952L10.5 7.56853V4.25C10.5 3.83579 10.8358 3.5 11.25 3.5H17.25C17.6642 3.5 18 3.83579 18 4.25V19.75C18 20.1642 17.6642 20.5 17.25 20.5H11.25C10.8358 20.5 10.5 20.1642 10.5 19.75V16.4314L9.34178 17.5904C9.23524 17.697 9.12066 17.7907 9 17.8715V19.75C9 20.9926 10.0074 22 11.25 22H17.25C18.4926 22 19.5 20.9926 19.5 19.75V4.25C19.5 3.00736 18.4926 2 17.25 2H11.25Z" fill="#343C54"/>
-<path d="M7.21971 15.4699L9.93766 12.75L4 12.75C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25L9.93784 11.25L7.21973 8.53016C6.92693 8.23718 6.92708 7.7623 7.22007 7.4695C7.51305 7.1767 7.98793 7.17685 8.28073 7.46984L12.2442 11.4359C12.401 11.5733 12.5 11.7751 12.5 12C12.5 12.2259 12.4002 12.4284 12.2422 12.5659L8.28075 16.5301C7.98796 16.8231 7.51308 16.8233 7.22009 16.5305C6.92709 16.2377 6.92692 15.7629 7.21971 15.4699Z" fill="#343C54"/>
-</svg>
-
-                        </div>
-                        <div class="content">
-                            <h3>Mengurangi Antrian dan Beban Front Office</h3>
-                            <p>
-                                Calon mahasiswa tidak perlu datang langsung ke kampus hanya untuk mendaftar.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-feature-extended">
-                        <div class="icon">
-                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(0 0 0)">
-<path d="M3.5 5.25C3.5 4.83579 3.16421 4.5 2.75 4.5C2.33579 4.5 2 4.83579 2 5.25V17.25C2 18.4926 3.00736 19.5 4.25 19.5H21.25C21.6642 19.5 22 19.1642 22 18.75C22 18.3358 21.6642 18 21.25 18H4.25C3.83579 18 3.5 17.6642 3.5 17.25V5.25Z" fill="#343C54"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M7 10.2773C5.89543 10.2773 5 11.1728 5 12.2773V15.7501C5 16.1643 5.33579 16.5001 5.75 16.5001H8.25C8.66421 16.5001 9 16.1643 9 15.7501V12.2773C9 11.1728 8.10457 10.2773 7 10.2773ZM6.5 12.2773C6.5 12.0012 6.72386 11.7773 7 11.7773C7.27614 11.7773 7.5 12.0012 7.5 12.2773V15.0001H6.5V12.2773Z" fill="#343C54"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 6.5C10.5 5.39543 11.3954 4.5 12.5 4.5C13.6046 4.5 14.5 5.39543 14.5 6.5V15.7501C14.5 16.1643 14.1642 16.5001 13.75 16.5001H11.25C10.8358 16.5001 10.5 16.1643 10.5 15.7501V6.5ZM12.5 6C12.2239 6 12 6.22386 12 6.5V15.0001H13V6.5C13 6.22386 12.7761 6 12.5 6Z" fill="#343C54"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M18 8.05859C16.8954 8.05859 16 8.95402 16 10.0586V15.7501C16 16.1643 16.3358 16.5001 16.75 16.5001H19.25C19.6642 16.5001 20 16.1643 20 15.7501V10.0586C20 8.95402 19.1046 8.05859 18 8.05859ZM17.5 10.0586C17.5 9.78245 17.7239 9.55859 18 9.55859C18.2761 9.55859 18.5 9.78245 18.5 10.0586V15.0001H17.5V10.0586Z" fill="#343C54"/>
-</svg>
-
-
-                        </div>
-                        <div class="content">
-                            <h3>Pelaporan Otomatis</h3>
-                            <p>
-                                Menyediakan laporan statistik pendaftaran secara otomatis dan real-time.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-feature-extended">
-                        <div class="icon">
-                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(0 0 0)">
-<path opacity="0.4" d="M20.75 18.5V8.67794L19.25 10.1779V18.5C19.25 18.9142 18.9142 19.25 18.5 19.25H5.5C5.08579 19.25 4.75 18.9142 4.75 18.5V5.5C4.75 5.08579 5.08579 4.75 5.5 4.75H18.314L19.2936 3.77034C19.3842 3.67974 19.4806 3.59848 19.5816 3.52657C19.2607 3.35027 18.8921 3.25 18.5 3.25H5.5C4.25736 3.25 3.25 4.25736 3.25 5.5V18.5C3.25 19.7426 4.25736 20.75 5.5 20.75H18.5C19.7426 20.75 20.75 19.7426 20.75 18.5Z" fill="#343C54"/>
-<path d="M20.4839 6.51861C20.7768 6.22572 20.7768 5.75084 20.4839 5.45795C20.191 5.16506 19.7162 5.16506 19.4233 5.45795L11.9299 12.9513L8.57696 9.59843C8.28406 9.30553 7.80919 9.30554 7.5163 9.59843C7.22341 9.89133 7.22341 10.3662 7.5163 10.6591L11.3996 14.5423C11.6925 14.8352 12.1673 14.8352 12.4602 14.5423L20.4839 6.51861Z" fill="#343C54"/>
-</svg>
-
-                        </div>
-                        <div class="content">
-                            <h3>Meningkatkan Profesionalisme Institusi</h3>
-                            <p>
-                                Memberikan citra kampus yang modern, adaptif terhadap teknologi, dan ramah pengguna.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-feature-extended">
-                        <div class="icon">
-                            <svg width="80" height="80" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(0 0 0)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M13.0788 18.3661L11.5788 18.366L10.0164 18.366C9.71309 18.366 9.4396 18.5487 9.32351 18.8289C9.20741 19.1092 9.27158 19.4318 9.48608 19.6463L11.7985 21.9587C12.0914 22.2516 12.5662 22.2516 12.8591 21.9587L15.1713 19.6465C15.3858 19.432 15.45 19.1094 15.3339 18.8292C15.2178 18.5489 14.9443 18.3662 14.641 18.3662L13.0788 18.3661Z" fill="#343C54"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67843 9.17373C5.95868 9.2898 6.14141 9.56327 6.14143 9.86661L6.1415 11.4294L6.14157 12.9294L6.14164 14.4912C6.14165 14.7945 5.95893 15.068 5.67867 15.1841C5.39841 15.3002 5.07581 15.236 4.86131 15.0215L2.5787 12.7389C2.42493 12.6016 2.32812 12.4018 2.32812 12.1794C2.32812 11.9634 2.41938 11.7688 2.56544 11.632L4.8611 9.33631C5.07559 9.12182 5.39817 9.05765 5.67843 9.17373Z" fill="#343C54"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M11.7814 2.41603L9.48545 4.71196C9.27095 4.92646 9.20678 5.24904 9.32286 5.52929C9.43894 5.80954 9.7124 5.99228 10.0157 5.99229L11.5788 5.99237L13.0788 5.99243L14.6403 5.9925C14.9437 5.99252 15.2171 5.80979 15.3332 5.52953C15.4493 5.24927 15.3852 4.92668 15.1707 4.71217L12.8927 2.43417C12.7552 2.27757 12.5535 2.17871 12.3288 2.17871C12.1129 2.17871 11.9182 2.26997 11.7814 2.41603Z" fill="#343C54"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M18.9781 9.17437C19.2583 9.05827 19.5809 9.12244 19.7954 9.33694L22.1078 11.6493C22.2485 11.79 22.3275 11.9807 22.3275 12.1797C22.3275 12.3786 22.2485 12.5693 22.1078 12.71L19.7957 15.0222C19.5812 15.2367 19.2586 15.3008 18.9783 15.1847C18.6981 15.0687 18.5153 14.7952 18.5153 14.4919L18.5153 11.4294L18.5152 12.9294L18.5151 9.8673C18.5151 9.56395 18.6978 9.29046 18.9781 9.17437Z" fill="#343C54"/>
-<g opacity="0.4">
-<path d="M13.0789 15.3026C13.0789 14.8884 12.7431 14.5526 12.3289 14.5526C11.9147 14.5526 11.5789 14.8884 11.5789 15.3026L11.5789 18.366L13.0789 18.3661L13.0789 15.3026Z" fill="#343C54"/>
-<path d="M6.14167 12.9293H9.20289C9.61711 12.9293 9.95289 12.5935 9.95289 12.1793C9.95289 11.7651 9.61711 11.4293 9.20289 11.4293H6.1416L6.14167 12.9293Z" fill="#343C54"/>
-<path d="M13.0789 9.05332L13.0789 5.99238L11.5789 5.99231L11.5789 9.05332C11.5789 9.46753 11.9147 9.80332 12.3289 9.80332C12.7431 9.80332 13.0789 9.46753 13.0789 9.05332Z" fill="#343C54"/>
-<path d="M18.5153 12.9293L15.4523 12.9295C15.038 12.9295 14.7022 12.5937 14.7022 12.1795C14.7022 11.7653 15.038 11.4295 15.4522 11.4295L18.5154 11.4293L18.5153 12.9293Z" fill="#343C54"/>
-</g>
-</svg>
-
-
-                        </div>
-                        <div class="content">
-                            <h3>Mendukung Penggunaan Multi Cabang</h3>
-                            <p>
-                                Kelola pendaftaran dari banyak kampus atau PSDKU dalam satu sistem terintegrasi. Solusi tepat untuk institusi dengan cabang di berbagai lokasi.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-feature-extended">
-                        <div class="icon">
-                            <svg width="80" height="80" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(0 0 0)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M13.0788 18.3661L11.5788 18.366L10.0164 18.366C9.71309 18.366 9.4396 18.5487 9.32351 18.8289C9.20741 19.1092 9.27158 19.4318 9.48608 19.6463L11.7985 21.9587C12.0914 22.2516 12.5662 22.2516 12.8591 21.9587L15.1713 19.6465C15.3858 19.432 15.45 19.1094 15.3339 18.8292C15.2178 18.5489 14.9443 18.3662 14.641 18.3662L13.0788 18.3661Z" fill="#343C54"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67843 9.17373C5.95868 9.2898 6.14141 9.56327 6.14143 9.86661L6.1415 11.4294L6.14157 12.9294L6.14164 14.4912C6.14165 14.7945 5.95893 15.068 5.67867 15.1841C5.39841 15.3002 5.07581 15.236 4.86131 15.0215L2.5787 12.7389C2.42493 12.6016 2.32812 12.4018 2.32812 12.1794C2.32812 11.9634 2.41938 11.7688 2.56544 11.632L4.8611 9.33631C5.07559 9.12182 5.39817 9.05765 5.67843 9.17373Z" fill="#343C54"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M11.7814 2.41603L9.48545 4.71196C9.27095 4.92646 9.20678 5.24904 9.32286 5.52929C9.43894 5.80954 9.7124 5.99228 10.0157 5.99229L11.5788 5.99237L13.0788 5.99243L14.6403 5.9925C14.9437 5.99252 15.2171 5.80979 15.3332 5.52953C15.4493 5.24927 15.3852 4.92668 15.1707 4.71217L12.8927 2.43417C12.7552 2.27757 12.5535 2.17871 12.3288 2.17871C12.1129 2.17871 11.9182 2.26997 11.7814 2.41603Z" fill="#343C54"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M18.9781 9.17437C19.2583 9.05827 19.5809 9.12244 19.7954 9.33694L22.1078 11.6493C22.2485 11.79 22.3275 11.9807 22.3275 12.1797C22.3275 12.3786 22.2485 12.5693 22.1078 12.71L19.7957 15.0222C19.5812 15.2367 19.2586 15.3008 18.9783 15.1847C18.6981 15.0687 18.5153 14.7952 18.5153 14.4919L18.5153 11.4294L18.5152 12.9294L18.5151 9.8673C18.5151 9.56395 18.6978 9.29046 18.9781 9.17437Z" fill="#343C54"/>
-<g opacity="0.4">
-<path d="M13.0789 15.3026C13.0789 14.8884 12.7431 14.5526 12.3289 14.5526C11.9147 14.5526 11.5789 14.8884 11.5789 15.3026L11.5789 18.366L13.0789 18.3661L13.0789 15.3026Z" fill="#343C54"/>
-<path d="M6.14167 12.9293H9.20289C9.61711 12.9293 9.95289 12.5935 9.95289 12.1793C9.95289 11.7651 9.61711 11.4293 9.20289 11.4293H6.1416L6.14167 12.9293Z" fill="#343C54"/>
-<path d="M13.0789 9.05332L13.0789 5.99238L11.5789 5.99231L11.5789 9.05332C11.5789 9.46753 11.9147 9.80332 12.3289 9.80332C12.7431 9.80332 13.0789 9.46753 13.0789 9.05332Z" fill="#343C54"/>
-<path d="M18.5153 12.9293L15.4523 12.9295C15.038 12.9295 14.7022 12.5937 14.7022 12.1795C14.7022 11.7653 15.038 11.4295 15.4522 11.4295L18.5154 11.4293L18.5153 12.9293Z" fill="#343C54"/>
-</g>
-</svg>
-
-
-                        </div>
-                        <div class="content">
-                            <h3>Mendukung Pemilihan Prodi Lebih dari Satu</h3>
-                            <p>
-                                Sistem mendukung pemilihan lebih dari satu program studi oleh calon mahasiswa, sesuai pengaturan yang ditetapkan oleh institusi.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-feature-extended">
-                        <div class="icon">
-                            <svg width="100" height="100" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(0 0 0)">
-<path d="M12 7.3062C17.3548 7.3062 21.4516 9.53201 21.4516 12.0481C21.4516 14.5643 17.3548 16.8223 12 16.8223C6.64516 16.8223 2.54839 14.5643 2.54839 12.0481C2.54839 9.53201 6.64516 7.3062 12 7.3062ZM12 6.75781C6.45161 6.75781 2 9.11265 2 12.0159C2 14.9191 6.45161 17.2417 12 17.2417C17.5484 17.2417 22 14.9191 22 12.0159C22 9.11265 17.5484 6.75781 12 6.75781ZM8.80645 11.6288C8.58065 12.8868 7.67742 12.7578 6.6129 12.7578L7.06452 10.532C8.25806 10.532 9.03226 10.403 8.80645 11.6288ZM5.03226 14.9836H6.19355L6.45161 13.5643C7.70968 13.5643 8.54839 13.661 9.25806 12.9836C10.0645 12.2094 10.2903 10.8868 9.70968 10.2417C9.3871 9.88684 8.93548 9.6933 8.25806 9.6933H6.03226L5.03226 14.9836ZM10.871 8.3062H12L11.7419 9.72555C12.7097 9.72555 13.6452 9.6933 14.0968 10.0804C14.5484 10.532 14.3226 11.0481 13.871 13.6288H12.6774C13.129 11.1772 13.2258 10.9514 13.0968 10.7578C12.9677 10.5643 12.4516 10.5643 11.5484 10.5643L10.9677 13.6288H9.83871L10.871 8.3062ZM17.7742 11.6288C17.5484 12.8868 16.6452 12.7578 15.5806 12.7578L16.0323 10.532C17.2258 10.532 18 10.403 17.7742 11.6288ZM14 14.9836H15.129L15.3871 13.6288C16.7419 13.6288 17.4839 13.7256 18.1935 13.0481C19 12.2739 19.2258 10.9514 18.6452 10.3062C18.3226 9.95136 17.871 9.75781 17.1935 9.75781H14.9677L14 14.9836Z" fill="#343C54"/>
-</svg>
-                        </div>
-                        <div class="content">
-                            <h3>Dibangun dengan Teknologi Terkini</h3>
-                            <p>
-                                Dibangun dengan PHP 8 dan Framework CodeIgniter 4 yang ringan dan cepat. Sistem ini hadir dengan desain modern dan efisiensi tinggi. PostgreSQL dipilih sebagai database yang digunakan untuk menjamin ketangguhan dalam mengelola data besar dengan kinerja optimal.
-                            </p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
+
+        <footer class="pt-3 mt-2 text-dark">
+            2025 &copy; Rector.id
+        </footer>
     </div>
-
-    
-
-
-</section>
-<section id="contact" class="subscribe-section pt-120">
-    <div class="container">
-        <div class="subscribe-wrapper img-bg">
-            <div class="row align-items-center">
-                <div class="col-xl-12 col-lg-12">
-                    <h2 class="text-white mb-25"><span class="text-white">Rector</span><span style="color: yellow;">.id</span></h2>
-                        <p class="text-white pr-5">
-                            Konsultan Teknologi Informasi yang telah berpengalaman lebih dari 15 tahun dalam merancang dan membangun solusi digital untuk institusi pendidikan. Spesialisasi kami terfokus pada pengembangan sistem informasi sekolah dan perguruan tinggi yang terintegrasi, efisien, dan mudah digunakan. Dengan semangat inovasi dan komitmen terhadap kualitas, kami hadir untuk mendukung transformasi digital dunia pendidikan Indonesia.
-                        </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<footer class="footer">
-    <div class="container">
-        <div class="widget-wrapper mt-5">
-            <div class="row">
-                <div class="col-xl-8 col-lg-8 col-md-6">
-                    <div class="footer-widget">
-                        <h3>Hubungi Kami</h3>
-                        <p class="desc mb-10 text-white">
-                            Email: <span class="fw-bolder" style="color: yellow;">rector.indonesia@gmail.com</span> / <span class="fw-bolder" style="color: yellow;">antonsofyan@president.ac.id</span>
-                        </p>
-                        <p class="desc mb-30 text-white">
-                            Perum Grand Cikarang City Cluster Asoka<br>Desa Karang Raharja Kecamatan Cikarang Utara Kabupaten Bekasi, Jawa Barat.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-xl-4 col-lg-4 col-md-6">
-                    <div class="footer-widget">
-                        <h3>Produk Lainnya</h3>
-                        <ul class="links">
-                            <li><a href="#">OpenSIAKAD (Soon)</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-<a href="#" class="scroll-top btn-hover">
-    <i class="lni lni-chevron-up"></i>
-</a>
-<script src="assets/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/wow.min.js"></script>
-<script src="assets/js/main.js"></script>
+</main>
+<script src="./assets/js/bootstrap.bundle.min.js" class="astro-vvvwv3sm"></script>
 </body>
 </html>
