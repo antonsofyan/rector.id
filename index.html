@@ -1,208 +1,563 @@
-<!doctype html>
-<html lang="en" data-bs-theme="light">
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
 <head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Aplikasi Import NEO FEEDER Gratis, Cepat &amp; Modern</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rector.id - Solusi Open Source Perguruan Tinggi Indonesia</title>
     <meta name="author" content="Anton Sofyan"/>
     <meta name="description"
           content="Impor ribuan data ke NEO FEEDER DIKTI dalam menit dengan aplikasi gratis, modern, cepat, dan tangguh. Solusi terbaik untuk pelaporan PDDikti kampus Anda."/>
     <meta name="keywords"
           content="neo feeder dikti, aplikasi neo feeder, import data feeder, aplikasi feeder gratis, pddikti, sinkronisasi pddikti, import ribuan data feeder, aplikasi kampus modern, aplikasi pelaporan pddikti, feeder dikti cepat, tools feeder tangguh, otomatisasi pddikti, software kampus gratis, import excel feeder dikti, solusi data perguruan tinggi"/>
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "SoftwareApplication",
-            "name": "Aplikasi Import NEO FEEDER",
-            "headline": "Aplikasi Import NEO FEEDER Gratis, Cepat & Modern",
-            "description": "Aplikasi gratis, modern, cepat, dan tangguh untuk mengimpor ribuan data ke NEO FEEDER DIKTI dalam hitungan menit. Solusi terbaik untuk pelaporan PDDikti kampus.",
-            "applicationCategory": "UtilityApplication",
-            "operatingSystem": "Windows, Linux, macOS",
-            "softwareVersion": "1.0.0",
-            "url": "https://rector.id/",
-            "image": "https://rector.id/assets/img/og-image.jpg",
-            "author": {
-                "@type": "Organization",
-                "name": "Rector.ID"
-            },
-            "publisher": {
-                "@type": "Organization",
-                "name": "Rector.ID"
-            },
-            "offers": {
-                "@type": "Offer",
-                "price": "0",
-                "priceCurrency": "IDR",
-                "category": "Free",
-                "availability": "https://schema.org/InStock"
-            }
-        }
-    </script>
-    <link rel="icon" href="assets/img/favicon.png" type="image/x-icon">
-    <link rel="canonical" href="https://rector.id/"/>
-    <script src="./assets/js/color-modes.js"></script>
-    <link href="./assets/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        :root {
-            --bs-primary: #4F46E5;
-            --bs-primary-rgb: 79, 70, 229;
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
 
-            --bs-secondary: #6366F1;
-            --bs-secondary-rgb: 99, 102, 241;
-
-            --bs-dark: #1E1B4B;
-            --bs-dark-rgb: 30, 27, 75;
-
-            --bs-body-bg: #F3F4F6;
-            --bs-body-color: #111827;
+        body {
+            font-family: 'Inter', sans-serif;
         }
 
-        .btn-primary {
-            background-color: #4F46E5;
-            border-color: #4F46E5;
+        .gradient-bg {
+            background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
         }
 
-        .btn-primary:hover {
-            background-color: #4338CA;
-            border-color: #4338CA;
+        .problem-card {
+            transition: all 0.3s ease;
         }
 
-        .text-bg-dark {
-            background-color: #1E1B4B !important;
+        .problem-card:hover {
+            transform: translateY(-5px);
         }
 
-        .bg-body-tertiary {
-            background-color: #ffffff !important;
-            border: 1px solid #e5e7eb !important;
+        /* Custom scrollbar untuk list fitur yang panjang */
+        .custom-scroll::-webkit-scrollbar {
+            width: 4px;
         }
 
-        .border {
-            border-color: #d1d5db !important;
+        .custom-scroll::-webkit-scrollbar-track {
+            background: #f1f1f1;
         }
 
+        .custom-scroll::-webkit-scrollbar-thumb {
+            background: #3b82f6;
+            border-radius: 10px;
+        }
     </style>
 </head>
-<body>
-<main>
-    <div class="container py-4">
-        <div class="mb-4">
-            <div class="container-fluid py-3">
-                <img src="assets/img/logo.png" width="250px" style="margin-bottom: 20px;"/>
-                <p class="col-md-12 fs-5">
-                    Selamat datang di rector.id, sebuah inisiatif open source yang kami bangun untuk menghadirkan solusi
-                    teknologi yang modern, terjangkau, dan mudah diakses bagi institusi pendidikan tinggi. Rector.id
-                    lahir dari kebutuhan nyata akan sistem yang lebih efisien, terstruktur, dan fleksibel dalam
-                    mendukung proses akademik serta pengelolaan data perguruan tinggi di Indonesia.
-                </p>
-                <p class="col-md-12 fs-5">
-                    Melalui tiga produk utama — Sistem Informasi Akademik, Sistem Penerimaan Mahasiswa Baru, dan Feeder
-                    Helper — kami berkomitmen untuk menyediakan platform yang dapat digunakan, dikembangkan, dan
-                    disesuaikan oleh siapa pun. Dengan semangat kolaborasi dan keterbukaan, rector.id dirancang agar
-                    komunitas, pengembang, serta perguruan tinggi dapat berkontribusi dan saling berbagi dalam membangun
-                    ekosistem teknologi pendidikan yang lebih baik.
-                </p>
-                <p class="col-md-12 fs-5">
-                    Harapan kami, rector.id dapat menjadi langkah kecil namun berarti dalam mendorong transformasi
-                    digital di dunia pendidikan tinggi, menghadirkan solusi yang lebih mudah, hemat biaya, serta
-                    berorientasi pada kebutuhan pengguna. Kami percaya bahwa perguruan tinggi yang maju harus didukung
-                    oleh sistem yang andal, tangguh, dan mampu menjawab tantangan operasional maupun akademik secara
-                    berkelanjutan.
-                </p>
-            </div>
-        </div>
-        <div class="row align-items-md-stretch">
-            <div class="col-md-6 my-3">
-                <div class="h-100 p-5 text-bg-dark rounded-3 fs-5">
-                    <h2 class="fw-bolder">Feeder Helper</h2>
-                    <p>
-                        Aplikasi ini dikembangkan untuk mempermudah proses impor data, sinkronisasi, dan pelaporan
-                        perguruan tinggi ke Kementerian Pendidikan Tinggi, Sains, dan Teknologi sesuai dengan standar
-                        dan format resmi yang ditetapkan. Dengan menggunakan aplikasi ini, perguruan tinggi dapat
-                        mengelola data akademik secara lebih cepat, terstruktur, dan minim kesalahan, serta
-                        mengakomodasi seluruh kebutuhan pelaporan wajib setiap semester sesuai ketentuan standar
-                        PDDikti.
-                    </p>
-                    <a href="https://drive.google.com/drive/folders/1BmMdJvDh20vUlaDxOxJaROsmKXbSXvq4?usp=sharing"
-                       target="_blank" class="btn btn-primary position-relative fw-bold px-4">
-                        DOWNLOAD V1.3.2
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">Free</span>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-6 my-3">
-                <div class="h-100 p-5 bg-body-tertiary border rounded-3 fs-5">
-                    <h2 class="fw-bolder">SIAKAD</h2>
-                    <p>
-                        Sistem Informasi Akademik (SIAKAD) adalah sebuah platform yang digunakan oleh perguruan tinggi
-                        untuk mengelola seluruh proses akademik secara terintegrasi dan digital. Sistem ini mencakup
-                        berbagai layanan, seperti pengelolaan data mahasiswa, kurikulum, mata kuliah, dosen, jadwal
-                        perkuliahan, KRS/KHS, penilaian, hingga pelaporan akademik. Dengan SIAKAD, institusi dapat
-                        meningkatkan efisiensi administrasi, meminimalkan kesalahan pencatatan, serta memberikan
-                        kemudahan akses informasi bagi mahasiswa, dosen, dan bagian akademik secara cepat dan akurat.
-                    </p>
-                    <button type="button" class="btn btn-primary position-relative fw-bold px-4 disabled">
-                        DOWNLOAD
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-    Coming Soon
-  </span>
-                    </button>
-                </div>
-            </div>
-        </div>
+<body class="bg-white text-slate-800">
 
-        <div class="row align-items-md-stretch">
-            <div class="col-md-6 my-3">
-                <div class="h-100 p-5 bg-body-tertiary border rounded-3 fs-5">
-                    <h2 class="fw-bolder">PMB Online</h2>
-                    <p>
-                        Sistem Penerimaan Mahasiswa Baru (PMB) adalah platform digital yang digunakan perguruan tinggi
-                        untuk mengelola seluruh proses pendaftaran calon mahasiswa secara online. Sistem ini mencakup
-                        fitur seperti pembuatan akun pendaftar, pengisian formulir, unggah dokumen, seleksi
-                        administrasi, pembayaran biaya pendaftaran, penjadwalan ujian/tes, hingga pengumuman hasil
-                        seleksi. Dengan adanya sistem PMB, proses penerimaan menjadi lebih efisien, transparan, dan
-                        mudah dijangkau oleh calon mahasiswa dari mana saja tanpa perlu datang langsung ke kampus.
-                    </p>
-                    <button type="button" class="btn btn-primary position-relative fw-bold px-4 disabled">
-                        DOWNLOAD
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-    Coming Soon
-  </span>
-                    </button>
-                </div>
-            </div>
-            <div class="col-md-6 my-3">
-                <div class="h-100 p-5 text-bg-dark rounded-3 fs-5">
-                    <h2>Hubungi Kami</h2>
-                    <p>Lebih dari 15 tahun pengalaman dalam membangun solusi sistem yang mendukung operasional dan
-                        transformasi digital perguruan tinggi.</p>
-                    <ul>
-                        <li>Anton Sofyan</li>
-                        <li>Email:
-                            <ul>
-                                <li>4ntonsofyan@gmail.com</li>
-                                <li>antonsofyan@president.ac.id</li>
-                            </ul>
-                        </li>
-                        <li>WhatsApp: 0857-5988-8922</li>
-                        <li>
-                            Join Group
-                            <a href="https://t.me/+nOK1naYX0TE5NTFl" class="text-warning fw-bold text-decoration-none">
-                                Telegram</a> /
-                            <a href="https://chat.whatsapp.com/DuX03BgCg2S3fnxwUKScsX?mode=hqrt3"
-                               class="text-warning fw-bold text-decoration-none">WhatsApp</a>
-                        </li>
-                    </ul>
-
-                </div>
-            </div>
+<nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <div class="text-2xl font-bold text-blue-700 tracking-tight">rector<span class="text-slate-400">.id</span></div>
+        <div class="hidden lg:flex space-x-6 font-medium text-slate-600">
+            <a href="#tantangan" class="hover:text-blue-600 transition">Tantangan</a>
+            <a href="#produk" class="hover:text-blue-600 transition">Produk</a>
+            <a href="#kontribusi" class="hover:text-blue-600 transition">Kontribusi</a>
+            <a href="#lisensi" class="hover:text-blue-600 transition">Lisensi</a>
+            <a href="#faq" class="hover:text-blue-600 transition">FAQ</a>
         </div>
-
-        <footer class="pt-3 mt-2 text-dark">
-            2025 &copy; Rector.id
-        </footer>
     </div>
-</main>
-<script src="./assets/js/bootstrap.bundle.min.js" class="astro-vvvwv3sm"></script>
+</nav>
+
+<header class="relative pt-16 pb-24 overflow-hidden gradient-bg border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+        <span class="inline-block px-4 py-1.5 mb-6 text-sm font-semibold text-blue-600 bg-blue-50 rounded-full italic border border-blue-100 uppercase tracking-widest">#OpenSourceForEducation</span>
+        <h1 class="text-3xl lg:text-5xl font-extrabold text-slate-900 mb-8 leading-[1.1]">
+            Menuju Digitalisasi  <br><span class="text-blue-600 italic">Perguruan Tinggi yang Mandiri</span>
+        </h1>
+        <p class="max-w-3xl mx-auto text-xl text-slate-600 mb-12 leading-relaxed font-light text-center">
+            Platform open source yang modern dan bebas biaya, membantu perguruan tinggi mengelola data secara mandiri, fleksibel, dan berkelanjutan tanpa vendor lock-in.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="#produk" class="bg-slate-900 text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-slate-800 transition shadow-2xl">Jelajahi Produk</a>
+            <a href="https://t.me/+nOK1naYX0TE5NTFl" class="bg-white text-blue-700 border-2 border-blue-600 px-10 py-4 rounded-xl font-bold text-lg hover:bg-blue-50 transition">Gabung Grup
+                Telegram</a>
+        </div>
+    </div>
+</header>
+
+<section id="tantangan" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h3 class="text-4xl font-extrabold text-slate-900 tracking-tight">Tantangan Digitalisasi Kampus</h3>
+            <p class="mt-4 text-slate-500 max-w-2xl mx-auto">Realita di balik hambatan digitalisasi pendidikan tinggi di Indonesia.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="problem-card p-8 rounded-3xl bg-slate-50 border border-slate-100 text-left">
+                <div class="w-12 h-12 bg-white text-blue-600 rounded-xl flex items-center justify-center mb-6 shadow-sm ring-1 ring-slate-200"><i class="fas fa-user-cog"></i></div>
+                <h4 class="text-xl font-bold text-slate-900 mb-3 text-left">SDM IT Terbatas</h4>
+                <p class="text-sm text-slate-600 leading-relaxed text-left">Tim IT seringkali hanya berperan sebagai operator sistem (input data, support ringan) tanpa penguasaan analisis kebutuhan
+                    atau arsitektur sistem yang kompleks.</p>
+            </div>
+
+            <div class="problem-card p-8 rounded-3xl bg-slate-50 border border-slate-100 text-left">
+                <div class="w-12 h-12 bg-white text-red-600 rounded-xl flex items-center justify-center mb-6 shadow-sm ring-1 ring-slate-200"><i class="fas fa-hand-holding-usd"></i></div>
+                <h4 class="text-xl font-bold text-slate-900 mb-3 text-left">Jebakan Biaya Vendor</h4>
+                <p class="text-sm text-slate-600 leading-relaxed text-left">Ketergantungan penuh pada vendor menyebabkan biaya rutin (lisensi, maintenance, update minor) terus membengkak setiap tahun
+                    tanpa kendali.</p>
+            </div>
+
+            <div class="problem-card p-8 rounded-3xl bg-slate-50 border border-slate-100 text-left">
+                <div class="w-12 h-12 bg-white text-amber-600 rounded-xl flex items-center justify-center mb-6 shadow-sm ring-1 ring-slate-200"><i class="fas fa-server"></i></div>
+                <h4 class="text-xl font-bold text-slate-900 mb-3 text-left">Kedaulatan Data Lemah</h4>
+                <p class="text-sm text-slate-600 leading-relaxed text-left">Data strategis institusi seringkali berada di kendali vendor. Sulit diakses penuh secara mandiri, berisiko pada privasi dan
+                    hambatan pengambilan keputusan.</p>
+            </div>
+
+            <div class="problem-card p-8 rounded-3xl bg-slate-50 border border-slate-100 text-left">
+                <div class="w-12 h-12 bg-white text-indigo-600 rounded-xl flex items-center justify-center mb-6 shadow-sm ring-1 ring-slate-200"><i class="fas fa-network-wired"></i></div>
+                <h4 class="text-xl font-bold text-slate-900 mb-3 text-left">Sistem Terfragmentasi</h4>
+                <p class="text-sm text-slate-600 leading-relaxed text-left">Setiap unit memiliki aplikasi sendiri (Akademik, Keuangan, SDM). Tanpa integrasi, terjadi duplikasi input dan beban kerja
+                    administratif yang melelahkan.</p>
+            </div>
+
+            <div class="problem-card p-8 rounded-3xl bg-slate-50 border border-slate-100 text-left">
+                <div class="w-12 h-12 bg-white text-emerald-600 rounded-xl flex items-center justify-center mb-6 shadow-sm ring-1 ring-slate-200"><i class="fas fa-exchange-alt"></i></div>
+                <h4 class="text-xl font-bold text-slate-900 mb-3 text-left">Digitalisasi Semu</h4>
+                <p class="text-sm text-slate-600 leading-relaxed text-left">Hanya mengubah media fisik ke online tanpa perbaikan alur kerja. Digitalisasi hanya formalitas dan tidak memberikan
+                    efisiensi nyata bagi pekerjaan dosen/staf.</p>
+            </div>
+
+            <div class="problem-card p-8 rounded-3xl bg-slate-50 border border-slate-100 text-left">
+                <div class="w-12 h-12 bg-white text-slate-600 rounded-xl flex items-center justify-center mb-6 shadow-sm ring-1 ring-slate-200"><i class="fas fa-sync"></i></div>
+                <h4 class="text-xl font-bold text-slate-900 mb-3 text-left">Regulasi Dinamis</h4>
+                <p class="text-sm text-slate-600 leading-relaxed text-left">Perubahan regulasi PDDIKTI membutuhkan respon cepat. Tanpa sistem fleksibel, institusi terjebak menunggu update vendor yang
+                    lama dan berbiaya.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="produk" class="py-24 bg-white text-center">
+    <div class="max-w-7xl mx-auto px-6 text-left">
+        <h2 class="text-4xl font-extrabold text-slate-900 mb-16 tracking-tight text-center">Solusi Teknologi Rector.id</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="relative group p-8 rounded-[2.5rem] border border-slate-200 hover:border-blue-500 transition flex flex-col h-full bg-white">
+                <div class="absolute top-6 right-6 bg-red-600 text-white text-[10px] font-black px-3 py-1 rounded-full shadow-lg z-10 uppercase tracking-widest">FREE</div>
+                <div class="w-16 h-16 bg-blue-600 text-white rounded-2xl flex items-center justify-center mb-8 text-3xl shadow-lg shadow-blue-200"><i class="fas fa-university"></i></div>
+                <div class="flex-grow">
+                    <h3 class="text-2xl font-bold mb-4">SIAKAD</h3>
+                    <p class="text-slate-600 text-sm mb-6 leading-relaxed text-justify">Sistem Informasi Akademik (SIAKAD) merupakan platform digital terintegrasi yang digunakan untuk mengelola
+                        seluruh proses akademik di perguruan tinggi, mulai dari penerimaan mahasiswa, perkuliahan, hingga kelulusan. SIAKAD berperan sebagai pusat data akademik yang memastikan setiap
+                        proses berjalan secara terstruktur, akurat, dan terdokumentasi dengan baik, sekaligus mendukung kebutuhan pelaporan internal maupun eksternal.</p>
+                    <ul class="space-y-3 text-slate-600 mb-8 text-sm text-justify">
+                        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-blue-500 mt-0.5"></i>Mengelola data mahasiswa dan dosen secara terpusat, akurat, dan selalu terbarui untuk
+                            mendukung seluruh proses akademik dan administrasi.
+                        </li>
+                        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-blue-500 mt-0.5"></i>Mendukung pengaturan kurikulum, struktur mata kuliah, serta keterkaitannya dengan
+                            program studi sesuai dengan kebijakan akademik yang berlaku.
+                        </li>
+                        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-blue-500 mt-0.5"></i>Memfasilitasi pengisian KRS, pengaturan kelas, dan penjadwalan perkuliahan secara
+                            online agar proses perkuliahan berjalan lebih tertib dan efisien.
+                        </li>
+                        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-blue-500 mt-0.5"></i>Mengelola proses penilaian secara terstruktur hingga menghasilkan KHS yang akurat dan
+                            dapat diakses oleh mahasiswa secara real-time.
+                        </li>
+                        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-blue-500 mt-0.5"></i>Mencatat kehadiran dosen dan mahasiswa serta aktivitas perkuliahan secara sistematis
+                            untuk memastikan keterlaksanaan proses belajar mengajar.
+                        </li>
+                        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-blue-500 mt-0.5"></i>Menyediakan pelaporan akademik yang lengkap dan terintegrasi dengan Feeder Helper dan
+                            PMB Online untuk memastikan data siap sinkronisasi dan pelaporan resmi.
+                        </li>
+                        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-red-500 mt-0.5"></i>Serta masih banyak fitur lainnya yang masih dalam proses pengembangan</li>
+                    </ul>
+                </div>
+                <div class="relative w-full">
+                    <a href="javascript:void(0)" class="w-full flex items-center justify-center gap-2 bg-slate-100 text-slate-500 py-4 rounded-2xl font-bold cursor-not-allowed border border-slate-200 transition-all">
+                        <i class="fas fa-university opacity-50"></i>
+                        Download SIAKAD
+                    </a>
+
+                    <span class="absolute -top-2 -right-2 bg-red-600 text-white text-[10px] font-black px-3 py-1 rounded-lg uppercase tracking-widest shadow-lg shadow-red-200 ring-2 ring-white z-10">
+        Soon
+    </span>
+                </div>
+            </div>
+
+            <div class="relative group p-8 rounded-[2.5rem] border border-slate-200 hover:border-blue-500 transition flex flex-col h-full bg-white">
+                <div class="absolute top-6 right-6 bg-red-600 text-white text-[10px] font-black px-3 py-1 rounded-full shadow-lg z-10 uppercase tracking-widest">FREE</div>
+                <div class="w-16 h-16 bg-blue-600 text-white rounded-2xl flex items-center justify-center mb-8 text-3xl shadow-lg shadow-blue-200"><i class="fas fa-user-plus"></i></div>
+                <div class="flex-grow">
+                    <h3 class="text-2xl font-bold mb-4">PMB Online</h3>
+                    <p class="text-slate-600 text-sm mb-6 leading-relaxed text-justify">PMB Online adalah solusi digital terpadu untuk proses penerimaan mahasiswa baru yang cepat, mudah, dan
+                        profesional. Sistem ini dirancang untuk memberikan pengalaman pendaftaran yang nyaman, intuitif, dan transparan bagi calon mahasiswa, mulai dari registrasi hingga pengumuman
+                        hasil seleksi. Di sisi lain, PMB Online membantu tim PMB mengelola seluruh proses penerimaan secara lebih terstruktur, efisien, dan minim kesalahan melalui dashboard
+                        administrasi yang terintegrasi. Dengan satu sistem terpadu, proses pendaftaran menjadi lebih rapi, terkontrol, dan siap mendukung citra perguruan tinggi yang modern dan berdaya
+                        saing.</p>
+                    <div class="bg-slate-50 rounded-2xl p-4 mb-6 border border-slate-100 overflow-y-auto custom-scroll">
+                        <ul class="space-y-2 text-sm text-slate-600 text-justify">
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-blue-500 mt-0.5"></i> Registrasi akun calon mahasiswa secara mandiri, kapan saja dan di mana saja.
+                            </li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-blue-500 mt-0.5"></i> Verifikasi akun otomatis melalui email untuk memastikan keamanan dan keabsahan
+                                data pendaftar.
+                            </li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-blue-500 mt-0.5"></i> Pengisian data pendaftaran yang lengkap dan terstruktur, dilengkapi dengan fitur
+                                unggah dokumen persyaratan secara online.
+                            </li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-blue-500 mt-0.5"></i> Proses verifikasi data yang cepat dan akurat oleh tim PMB melalui dashboard
+                                administrasi.
+                            </li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-blue-500 mt-0.5"></i> Seleksi penerimaan yang transparan dan terkelola dengan baik sesuai kebijakan
+                                institusi.
+                            </li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-blue-500 mt-0.5"></i> Pengumuman hasil seleksi secara online, mudah diakses dan informatif bagi calon
+                                mahasiswa.
+                            </li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-red-500 mt-0.5"></i> Serta masih banyak fitur lainnya yang masih dalam proses pengembangan</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="relative w-full">
+                    <a href="javascript:void(0)" class="w-full flex items-center justify-center gap-2 bg-slate-100 text-slate-500 py-4 rounded-2xl font-bold cursor-not-allowed border border-slate-200 transition-all">
+                        <i class="fas fa-university opacity-50"></i>
+                        Download PMB Online
+                    </a>
+
+                    <span class="absolute -top-2 -right-2 bg-red-600 text-white text-[10px] font-black px-3 py-1 rounded-lg uppercase tracking-widest shadow-lg shadow-red-200 ring-2 ring-white z-10">
+        Soon
+    </span>
+                </div>
+            </div>
+
+            <div class="relative group p-8 rounded-[2.5rem] border-2 border-blue-600 hover:border-blue-700 transition flex flex-col h-full bg-white shadow-xl shadow-blue-50">
+                <div class="absolute top-6 right-6 bg-red-600 text-white text-[10px] font-black px-3 py-1 rounded-full shadow-lg z-10 uppercase tracking-widest">FREE</div>
+                <div class="w-16 h-16 bg-blue-600 text-white rounded-2xl flex items-center justify-center mb-8 text-3xl shadow-lg shadow-blue-200"><i class="fas fa-sync-alt"></i></div>
+                <div class="flex-grow">
+                    <h3 class="text-2xl font-bold mb-2">Feeder Helper</h3>
+                    <p class="text-slate-600 text-sm mb-6 leading-relaxed text-justify">Feeder Helper menghadirkan fitur lengkap tanpa batasan untuk mengakomodasi seluruh kebutuhan pelaporan akademik
+                        secara optimal di setiap semester. Sistem ini mampu mengimpor ribuan data dalam hitungan detik tanpa limitasi, serta menyediakan fitur penghapusan dan perbaikan data di Neo
+                        Feeder sesuai kebutuhan koreksi dan sinkronisasi.</p>
+                    <div class="bg-slate-50 rounded-2xl p-4 mb-6 border border-slate-100 max-h-50 overflow-y-auto custom-scroll">
+                        <ul class="space-y-2 text-sm text-slate-600 text-justify">
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-blue-500 mt-0.5"></i> Manajemen Data Mahasiswa: Data Mahasiswa, Histori Pendidikan Mahasiswa, Nilai
+                                Transfer Mahasiswa Pindahan, Prestasi Mahasiswa, Status Mahasiswa (Lulus / Drop Out).
+                            </li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-blue-500 mt-0.5"></i> Manajemen Kurikulum & Pembelajaran: Kurikulum & Mata Kuliah, Mata Kuliah
+                                Kurikulum, Substansi Kuliah, Rencana Pembelajaran.
+                            </li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-blue-500 mt-0.5"></i> Manajemen Perkuliahan & Penilaian: Kelas Perkuliahan, Dosen Pengajar Kelas,
+                                Peserta Kelas Kuliah / KRS, Nilai Perkuliahan / KHS, Skala Penilaian.
+                            </li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-blue-500 mt-0.5"></i> Manajemen Aktivitas Akademik & Kampus Merdeka: Aktivitas Kuliah Mahasiswa,
+                                Aktivitas Mahasiswa, Anggota Aktivitas Mahasiswa, Pembimbing Aktivitas Mahasiswa, Penguji Aktivitas Mahasiswa, Konversi Aktivitas Kampus Merdeka.
+                            </li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-blue-500 mt-0.5"></i> Manajemen Periode & Kesiapan Pelaporan Akademik: Periode Perkuliahan.</li>
+                        </ul>
+                    </div>
+                    <p class="text-slate-600 text-sm mb-6 leading-relaxed text-justify">Dilengkapi dengan berbagai laporan kustom (custom report) yang informatif dan mudah dipahami, Feeder Helper
+                        membantu perguruan tinggi memastikan data selalu akurat, konsisten, dan siap dilaporkan kapan pun dibutuhkan.</p>
+                </div>
+                <a target="_blank" href="https://drive.google.com/drive/u/5/folders/1BmMdJvDh20vUlaDxOxJaROsmKXbSXvq4?usp=sharing"
+                   class="w-full flex items-center justify-center gap-2 bg-blue-600 text-white py-4 rounded-2xl font-bold hover:bg-blue-700 transition-all duration-300">Download Feeder Helper
+                    v1.3.2</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="keunggulan" class="py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8 text-center">
+        <div class="bg-white p-10 rounded-3xl border border-slate-100">
+            <div class="w-16 h-16 bg-emerald-50 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl"><i class="fas fa-eye"></i></div>
+            <h4 class="text-xl font-bold mb-3">Transparansi</h4>
+            <p class="text-slate-600 text-sm leading-relaxed">Kode sumber terbuka memungkinkan audit keamanan mandiri. Keamanan adalah hasil kolaborasi.</p>
+        </div>
+        <div class="bg-white p-10 rounded-3xl border border-slate-100 shadow-xl shadow-blue-100 transform md:-translate-y-4">
+            <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl"><i class="fas fa-unlock-alt"></i></div>
+            <h4 class="text-xl font-bold mb-3">No Vendor Lock-in</h4>
+            <p class="text-slate-600 text-sm leading-relaxed">Kampus memegang kendali penuh atas data dan sistem. Bebas biaya lisensi sepihak.</p>
+        </div>
+        <div class="bg-white p-10 rounded-3xl border border-slate-100">
+            <div class="w-16 h-16 bg-amber-50 text-amber-600 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl"><i class="fas fa-tools"></i></div>
+            <h4 class="text-xl font-bold mb-3">Customizability</h4>
+            <p class="text-slate-600 text-sm leading-relaxed">Sistem yang dapat dimodifikasi secara fleksibel sesuai kebijakan akademik unik institusi Anda.</p>
+        </div>
+    </div>
+</section>
+
+<section id="kontribusi" class="py-24 bg-blue-50 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 relative">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div class="order-2 lg:order-1">
+                <div class="relative bg-white p-8 rounded-[3rem] shadow-xl border border-blue-100 text-left">
+                    <div class="flex items-center gap-6 mb-8">
+                        <img src="data:image/svg+xml,%3csvg%20width='137'%20height='38'%20viewBox='0%200%20137%2038'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_118_10024)'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M72.7386%2031.9427H70.5078V34.2699H73.5513L74.8841%2037.6969H78.3056L72.2835%2022.6738H70.4996V25.6665L72.7386%2031.9427ZM70.5078%2031.9427H68.2688L70.4265%2025.6745H70.4996V22.6818H68.7889L62.8359%2037.7049H66.038L67.3748%2034.2779H70.4996L70.5078%2031.9427Z'%20fill='%23005BAA'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M89.5501%2025.455C88.5675%2025.0218%2087.5025%2024.7977%2086.4253%2024.7975C85.385%2024.7975%2083.9872%2025.2319%2083.9872%2026.9095C83.9872%2029.4678%2090.7529%2028.372%2090.7529%2033.4766C90.7529%2036.7602%2088.071%2037.9995%2084.9502%2037.9995C83.3248%2037.9995%2082.569%2037.7803%2081.0046%2037.4177L81.3053%2034.7199C82.3888%2035.2638%2083.5831%2035.562%2084.7999%2035.5926C85.9905%2035.5926%2087.5508%2035.0068%2087.5508%2033.6998C87.5508%2030.7749%2080.7852%2032.0181%2080.7852%2026.9852C80.7852%2023.6299%2083.4671%2022.3906%2086.1408%2022.3906C87.4021%2022.395%2088.655%2022.5912%2089.8548%2022.9724L89.5501%2025.455Z'%20fill='%23005BAA'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M97.584%2025.0925H93.1914V22.6816H105.093V25.0925H100.709V37.7047H97.584V25.0925Z'%20fill='%23005BAA'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M113.344%2025.105C114.466%2025.2445%20115.429%2025.6829%20115.429%2026.9979C115.429%2028.4563%20114.466%2028.8947%20113.344%2029.0421V31.6682C113.795%2031.9551%20114.015%2032.3217%20114.315%2033.0549L116.176%2037.7172H119.598L117.139%2031.8794C116.847%2031.1461%20116.327%2030.3452%20115.514%2030.2854C116.384%2030.1857%20117.185%2029.7724%20117.762%2029.1258C118.339%2028.4793%20118.65%2027.6456%20118.635%2026.7867C118.635%2023.3597%20116.034%2022.8456%20113.352%2022.7021L113.344%2025.105ZM111.19%2025.105H113.344V22.7141H108.086V37.7372H111.207V31.5088H112.149C112.553%2031.4694%20112.96%2031.5198%20113.34%2031.6562V29.0302C112.946%2029.0878%20112.547%2029.1079%20112.149%2029.0899H111.186L111.19%2025.105Z'%20fill='%23005BAA'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M131.422%2031.9427H129.191V34.2699H132.32L133.584%2037.6969H137.001L130.979%2022.6738H129.191V25.6665L131.422%2031.9427ZM129.191%2031.9427H126.964L129.191%2025.6745V22.6818H127.484L121.531%2037.7049H124.75L126.082%2034.2779H129.207L129.191%2031.9427Z'%20fill='%23005BAA'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M80.9241%206.77433C77.1329%207.06523%2069.7658%208.15709%2063.7437%209.16527C57.7907%2010.1854%2054.8041%2010.9186%2052.2888%2011.5004C45.6694%2013.0346%2035.6285%2015.8838%2030.2729%2017.4778C25.5999%2019.0359%2013.1616%2024.0648%2012.7918%2023.9971C12.6415%2023.9971%2012.1904%2023.5587%2012.8609%2023.1204C11.6012%2023.9971%2031.0124%207.14492%2062.8416%202.91695V0H0V33.4732C19.334%2025.8182%2040.6104%2022.8255%2062.8457%2022.8255V14.7441L63.3699%2014.5967C76.0885%209.93037%2090.8918%208.02957%20114.911%205.55097V4.75399C112.904%204.75399%2098.0272%204.96917%2081.2207%206.79425L80.9241%206.77433Z'%20fill='%23005BAA'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M114.912%204.29948C103.641%203.56019%2092.3313%203.60946%2081.0676%204.44692C75.1959%204.88526%2068.9463%205.76194%2063.1477%206.71034C50.7947%208.82234%2040.5385%2011.3767%2040.5385%2011.3767C40.5385%2011.3767%2039.7908%2011.3767%2040.4613%2010.9423C41.5788%2010.2848%2050.6484%206.272%2063.1477%203.86512C65.8269%203.35506%2068.6523%202.91672%2071.6241%202.55011C72.0711%202.55011%2071.6241%202.04004%2071.6241%202.04004C68.7268%202.25921%2065.8255%202.40665%2063.0908%202.76928C51.3864%204.41589%2040.0139%207.83588%2029.3802%2012.9069C28.9332%2013.13%2030.5668%2012.1776%2021.046%2017.358C21.046%2017.358%2015.0971%2021.2233%2014.6542%2021.6617C14.0569%2022.2475%2019.5588%2019.8366%2023.4272%2018.4499C26.999%2017.2145%2036.6701%2014.5128%2038.9009%2013.8553C40.4613%2013.4209%2045.9633%2012.2613%2051.6887%2011.1575C57.0484%2010.0616%2062.1765%209.4121%2062.4772%209.34037H62.847C62.847%209.34037%2068.7268%208.45971%2069.9093%208.24054C71.7013%207.87393%2081.4455%206.71034%2081.5187%206.71034C98.3292%204.88526%20115.209%204.7418%20114.912%204.7418V4.29948Z'%20fill='%2395B6DF'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_118_10024'%3e%3crect%20width='137'%20height='38'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                             alt="Logo Astra" class="h-10">
+                        <div class="h-10 w-[2px] bg-slate-200"></div>
+                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest leading-tight">Penerima Penghargaan<br>Satu Indonesia Awards</span>
+                    </div>
+                    <h3 class="text-2xl font-black text-slate-900 mb-4 leading-tight">Pengakuan Atas Dedikasi Pendidikan</h3>
+                    <p class="text-slate-600 leading-relaxed mb-6">
+                        Pengembang <strong>rector.id</strong> telah menerima penghargaan tingkat provinsi pada ajang <strong>SATU Indonesia Awards oleh Astra</strong> tahun 2017 atas kontribusi nyata
+                        dalam digitalisasi pendidikan Indonesia.
+                    </p>
+                    <a href="https://www.astra.co.id/satu-indonesia-awards" target="_blank" class="text-blue-600 font-bold text-sm hover:underline">Info Selengkapnya <i
+                            class="fas fa-external-link-alt ml-1 text-xs"></i></a>
+                </div>
+            </div>
+            <div class="order-1 lg:order-2 text-left">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-600 text-white text-xs font-bold mb-6"><i class="fas fa-heart"></i> KONTRIBUSI UNTUK NEGERI</div>
+                <h2 class="text-4xl font-extrabold text-slate-900 mb-8 leading-tight">Jejak Pengabdian <br><span class="text-blue-600 italic">Digital Sejak 2013</span></h2>
+                <p class="text-slate-600 mb-8 leading-relaxed">Rector.id adalah kelanjutan dari misi jangka panjang untuk menghadirkan kemandirian teknologi bagi institusi pendidikan di Indonesia.</p>
+                <div class="space-y-6">
+                    <div class="flex gap-4 items-start">
+                        <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center text-blue-600 shadow-sm shrink-0 mt-1"><i class="fas fa-school"></i></div>
+                        <div>
+                            <h4 class="font-bold text-slate-900">CMS Sekolahku</h4>
+                            <p class="text-sm text-slate-600 leading-relaxed text-left">Dikembangkan secara gratis sejak 2013 dan kini telah digunakan oleh lebih dari <strong>500 sekolah</strong> di
+                                seluruh Indonesia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-blue-600 font-bold tracking-widest uppercase text-sm mb-3">Arsitektur Sistem</h2>
+            <h3 class="text-4xl font-extrabold text-slate-900 tracking-tight mb-6">Stack Teknologi yang Digunakan</h3>
+            <p class="max-w-4xl mx-auto text-slate-600 leading-relaxed text-center">
+                Sistem dikembangkan menggunakan stack teknologi yang stabil, modern, dan terbuka (open source) untuk memastikan performa optimal, kemudahan pengembangan, serta keberlanjutan jangka
+                panjang. Pemilihan teknologi ini mempertimbangkan aspek keamanan, skalabilitas, ketersediaan sumber daya pengembang, serta kemudahan integrasi dengan sistem lain yang sudah ada di
+                lingkungan perguruan tinggi.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="p-8 rounded-[2.5rem] bg-slate-50 border border-slate-100 flex flex-col items-start text-left">
+                <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-indigo-600 shadow-sm mb-6 ring-1 ring-slate-200">
+                    <i class="fab fa-php text-3xl"></i>
+                </div>
+                <h4 class="text-xl font-bold text-slate-900 mb-4">PHP</h4>
+                <p class="text-slate-600 leading-relaxed mb-4">
+                    Bahasa pemrograman utama yang matang dengan ekosistem luas. Versi 8.5 menghadirkan peningkatan performa dan keamanan modern yang mudah dipelihara oleh developer lokal.
+                </p>
+            </div>
+
+            <div class="p-8 rounded-[2.5rem] bg-slate-50 border border-slate-100 flex flex-col items-start text-left">
+                <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-blue-500 shadow-sm mb-6 ring-1 ring-slate-200">
+                    <i class="fas fa-database text-2xl"></i>
+                </div>
+                <h4 class="text-xl font-bold text-slate-900 mb-4">PostgreSQL</h4>
+                <p class="text-slate-600 leading-relaxed mb-4">
+                    Andal untuk data skala besar dengan integritas tinggi. Versi 18 menawarkan optimasi query terbaik untuk transaksi kompleks dan pelaporan akademik yang akurat.
+                </p>
+            </div>
+
+            <div class="p-8 rounded-[2.5rem] bg-slate-50 border border-slate-100 flex flex-col items-start text-left">
+                <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-yellow-500 shadow-sm mb-6 ring-1 ring-slate-200">
+                    <i class="fab fa-js text-2xl"></i>
+                </div>
+                <h4 class="text-xl font-bold text-slate-900 mb-4">Vanilla JS</h4>
+                <p class="text-slate-600 leading-relaxed mb-4">
+                    Memastikan aplikasi ringan dan cepat tanpa ketergantungan library pihak ketiga. Meningkatkan performa sisi klien dan memudahkan debugging tim internal.
+                </p>
+            </div>
+
+            <div class="p-8 rounded-[2.5rem] bg-slate-50 border border-slate-100 flex flex-col items-start text-left">
+                <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-blue-900 shadow-sm mb-6 ring-1 ring-slate-200">
+                    <i class="fas fa-desktop text-2xl"></i>
+                </div>
+                <h4 class="text-xl font-bold text-slate-900 mb-4">CoreUI Theme</h4>
+                <p class="text-slate-600 leading-relaxed mb-4">
+                    Framework antarmuka admin yang konsisten dan responsif. Memberikan pengalaman pengguna (UX) yang profesional dan nyaman bagi staf dan dosen.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="lisensi" class="py-24 bg-white overflow-hidden text-left">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-12 gap-8 items-stretch">
+
+            <div class="lg:col-span-7 bg-slate-50 rounded-[3rem] p-10 lg:p-16 border border-slate-100 flex flex-col justify-center relative overflow-hidden">
+                <i class="fas fa-balanced-scale absolute -bottom-10 -right-10 text-[15rem] text-slate-200/50 -rotate-12"></i>
+                <div class="relative z-10">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-100 text-emerald-700 text-xs font-bold mb-6">
+                        <i class="fas fa-unlock"></i> OPEN SOURCE FREEDOM
+                    </div>
+                    <h2 class="text-4xl lg:text-5xl font-black text-slate-900 mb-6 tracking-tight">Lisensi <br><span class="text-blue-600">Kebebasan Penuh</span></h2>
+                    <p class="text-lg text-slate-600 mb-8 leading-relaxed max-w-xl">
+                        Rector.id dijamin oleh lisensi <strong>GNU GPL v3</strong>. Kami percaya bahwa teknologi pendidikan tidak boleh dimonopoli. Inovasi ini milik komunitas pendidikan Indonesia selamanya.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center gap-3 bg-white px-5 py-3 rounded-2xl shadow-sm border border-slate-100">
+                            <i class="fas fa-check-circle text-blue-600"></i>
+                            <span class="text-sm font-bold text-slate-700">Bebas Jalankan</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-white px-5 py-3 rounded-2xl shadow-sm border border-slate-100">
+                            <i class="fas fa-check-circle text-blue-600"></i>
+                            <span class="text-sm font-bold text-slate-700">Bebas Ubah</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-white px-5 py-3 rounded-2xl shadow-sm border border-slate-100">
+                            <i class="fas fa-check-circle text-blue-600"></i>
+                            <span class="text-sm font-bold text-slate-700">Bebas Sebar</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-5 flex flex-col justify-between p-2">
+                <div class="space-y-12 py-8">
+                    <div>
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-10 h-10 rounded-xl bg-slate-900 flex items-center justify-center text-white shadow-lg">
+                                <i class="fas fa-gavel text-xs"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900">Ketentuan GNU GPL v3</h3>
+                        </div>
+                        <p class="text-slate-600 text-sm leading-relaxed border-l-2 border-slate-200 pl-6 italic">
+                            "Setiap modifikasi yang didistribusikan wajib tetap terbuka. Sistem ini tidak dapat diprivatisasi atau dikunci oleh pihak mana pun."
+                        </p>
+                    </div>
+
+                    <div>
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center text-white shadow-lg">
+                                <i class="fas fa-shield-alt text-xs"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900">Jaminan Keamanan</h3>
+                        </div>
+                        <ul class="space-y-5">
+                            <li class="flex items-start gap-4">
+                                <i class="fas fa-check text-blue-600 mt-1"></i>
+                                <div>
+                                    <p class="font-bold text-slate-800 text-sm">Audit Transparan</p>
+                                    <p class="text-xs text-slate-500">Kode sumber dapat diaudit publik secara terbuka.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <i class="fas fa-check text-blue-600 mt-1"></i>
+                                <div>
+                                    <p class="font-bold text-slate-800 text-sm">Responsibilitas Cepat</p>
+                                    <p class="text-xs text-slate-500">Patch keamanan diperbarui secara kolaboratif.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <i class="fas fa-check text-blue-600 mt-1"></i>
+                                <div>
+                                    <p class="font-bold text-slate-800 text-sm">Kedaulatan Data</p>
+                                    <p class="text-xs text-slate-500">Data tetap berada dalam kendali server kampus.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="faq" class="py-24 bg-slate-50 text-left">
+    <div class="max-w-4xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-blue-600 font-bold tracking-widest uppercase text-sm mb-3">Tanya Jawab</h2>
+            <h3 class="text-3xl font-extrabold text-slate-900 mb-4">Pertanyaan Umum (FAQ)</h3>
+            <p class="text-slate-500">Informasi lebih lanjut mengenai implementasi dan kebijakan sistem Rector.id.</p>
+        </div>
+
+        <div class="space-y-4 text-left">
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                <h4 class="font-bold text-slate-900 mb-3 flex items-start gap-3">
+                    <span class="text-blue-600">Q:</span>
+                    Apakah benar sistem ini gratis tanpa biaya lisensi tahunan?
+                </h4>
+                <p class="text-sm text-slate-600 leading-relaxed ml-7">
+                    <strong>Benar.</strong> Rector.id dirilis dengan lisensi open source (GPL v3). Institusi Anda tidak perlu membayar biaya lisensi harian, bulanan, atau tahunan. Biaya hanya timbul
+                    jika institusi memerlukan layanan profesional di luar sistem, seperti bantuan instalasi khusus, migrasi data dari sistem lama, atau penyediaan infrastruktur server.
+                </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                <h4 class="font-bold text-slate-900 mb-3 flex items-start gap-3 text-left">
+                    <span class="text-blue-600">Q:</span>
+                    Mengapa menggunakan versi PostgreSQL dan PHP secara spesifik?
+                </h4>
+                <p class="text-sm text-slate-600 leading-relaxed ml-7 text-left">
+                    Kami berkomitmen pada teknologi masa depan dengan mengadopsi <strong>Latest Version</strong> dari setiap stack yang digunakan. Kami memilih <strong>PostgreSQL 18 (Versi
+                    Terbaru)</strong> karena keunggulannya dalam integritas data dan penanganan query kompleks pada data akademik masif. Penggunaan <strong>PHP 8.5 (Versi Terbaru)</strong> memastikan
+                    kampus mendapatkan performa eksekusi tercepat serta standar keamanan paling mutakhir yang tersedia saat ini. Dikombinasikan dengan <strong>Vanilla JS</strong>, sistem tetap ringan
+                    dan bebas dari kerentanan library pihak ketiga yang seringkali usang (outdated).
+                </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                <h4 class="font-bold text-slate-900 mb-3 flex items-start gap-3">
+                    <span class="text-blue-600">Q:</span>
+                    Bagaimana kepastian sinkronisasi dengan Neo Feeder PDDIKTI?
+                </h4>
+                <p class="text-sm text-slate-600 leading-relaxed ml-7">
+                    Modul <strong>Feeder Helper</strong> kami dirancang khusus untuk berkomunikasi langsung dengan API Neo Feeder. Fitur ini mencakup validasi data masal sebelum dikirim, sehingga
+                    meminimalisir error pelaporan. Kami berkomitmen melakukan update rutin setiap kali ada perubahan skema API dari Kemdikbudristek.
+                </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                <h4 class="font-bold text-slate-900 mb-3 flex items-start gap-3">
+                    <span class="text-blue-600">Q:</span>
+                    Apakah tim IT kampus bisa memodifikasi kode sumber sendiri?
+                </h4>
+                <p class="text-sm text-slate-600 leading-relaxed ml-7">
+                    <strong>Sangat bisa.</strong> Itulah inti dari sistem open source. Tim IT kampus memiliki akses penuh ke kode sumber untuk melakukan kustomisasi fitur sesuai dengan kebijakan
+                    internal kampus yang unik, tanpa perlu menunggu persetujuan atau bantuan dari pihak kami.
+                </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                <h4 class="font-bold text-slate-900 mb-3 flex items-start gap-3">
+                    <span class="text-blue-600">Q:</span>
+                    Bagaimana jika kampus tidak memiliki tim IT yang cukup kuat?
+                </h4>
+                <p class="text-sm text-slate-600 leading-relaxed ml-7">
+                    Kami menyediakan layanan pendampingan mulai dari setup server awal, pelatihan operator dan admin, hingga dukungan teknis pasca-implementasi. Tujuannya adalah mentransfer
+                    pengetahuan agar perlahan tim internal kampus mampu mengelola sistem secara mandiri (Kemandirian Digital).
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="kontak" class="py-24 bg-blue-700 text-left">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="bg-white rounded-[3rem] p-8 lg:p-16 shadow-2xl grid lg:grid-cols-2 gap-16 items-center relative overflow-hidden">
+            <div>
+                <h2 class="text-4xl font-extrabold text-slate-900 mb-8 leading-tight">Membangun Masa Depan <br>Pendidikan Mandiri</h2>
+                <p class="mb-8 text-slate-600">Hubungi kami untuk diskusi teknis, bantuan implementasi, atau sekadar berbagi ide untuk pendidikan tinggi Indonesia.</p>
+                <div class="space-y-4 mb-10 text-left">
+                    <div class="flex items-center gap-4 font-bold text-slate-700 group cursor-pointer text-left"><i class="fas fa-envelope text-blue-600 w-6"></i> <span>4ntonsofyan@gmail.com</span>
+                    </div>
+                    <div class="flex items-center gap-4 font-bold text-slate-700 group cursor-pointer text-left"><i class="fab fa-whatsapp text-emerald-600 w-6"></i> <span>0857-5988-8922</span></div>
+                </div>
+                <div class="flex flex-wrap gap-4">
+                    <a href="https://wa.me/6285759888922" class="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-700 shadow-lg"><i class="fab fa-whatsapp mr-2"></i> Konsultasi Sekarang</a>
+                    <a href="https://t.me/+nOK1naYX0TE5NTFl" class="bg-slate-900 text-white px-8 py-4 rounded-xl font-bold hover:bg-slate-800 shadow-lg"><i class="fab fa-telegram-plane mr-2"></i> Join Telegram</a>
+                </div>
+            </div>
+            <div class="relative bg-slate-50 p-10 rounded-[2.5rem] border border-slate-200">
+                <div class="flex items-center gap-4 mb-6">
+                    <div>
+                        <h4 class="text-xl font-extrabold">Anton Sofyan</h4>
+                        <p class="text-blue-600 text-xs font-bold uppercase tracking-widest text-left">System Architect & Developer</p>
+                    </div>
+                </div>
+                <p class="text-sm text-slate-600 leading-relaxed mb-6 text-left">Dengan pengalaman lebih dari 15 tahun, kontribusi berkelanjutan di dunia open source selama 13 tahun, serta keterlibatan aktif dalam pengelolaan sistem akademik dengan lebih dari 10.000 pengguna aktif di President University, kami berupaya memberikan solusi digital yang matang dan dapat diandalkan.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="py-12 bg-white text-center text-slate-400 text-sm">
+    <p class="font-bold text-slate-900 text-2xl mb-2 tracking-tighter">rector<span class="text-blue-600">.id</span></p>
+    <p>&copy; 2025 Rector.id - Inisiatif Open Source untuk Pendidikan Tinggi Indonesia.</p>
+    <p class="mt-2 text-[10px] uppercase tracking-widest font-bold text-slate-300">Mendorong Kedaulatan Digital Pendidikan</p>
+</footer>
+
 </body>
 </html>
